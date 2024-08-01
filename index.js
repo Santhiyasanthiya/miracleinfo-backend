@@ -32,6 +32,14 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+
+app.post("/",(req,res)=>{
+  res.send("Welcome to Alphaingen")
+})
+
+
+
+
 app.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
 
